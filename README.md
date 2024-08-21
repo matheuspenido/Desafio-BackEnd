@@ -116,7 +116,13 @@ To run the application, follow these steps:
 ```bash
 docker-compose build --no-cache
 ```
-4. After all containers are built and started, the services will be available on the configured ports. You can use tools like Postman, cURL, or directly access the Swagger UIs to interact with the services:
+4. After all containers are built, run to start:
+
+```bash
+docker-compose up
+```
+
+5. After it finishes, the services will be available on the configured ports. You can use tools like Postman, cURL, or directly access the Swagger UIs to interact with the services:
 
 - **CustomerService Swagger**: [https://localhost:5005/swagger/index.html](https://localhost:5005/swagger/index.html)
 - **MotorcycleService Swagger**: [https://localhost:5003/swagger/index.html](https://localhost:5003/swagger/index.html)
