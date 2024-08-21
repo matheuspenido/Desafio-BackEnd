@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMotorcycleService.Infrastructure", "MyMotorcycleService.Infrastructure\MyMotorcycleService.Infrastructure.csproj", "{3A078981-37A6-403D-AA6A-C65D415FEF55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMotorcycleService.Application", "MyMotorcycleService.Application\MyMotorcycleService.Application.csproj", "{1C804BD0-E711-47AA-AE62-CF3D65C49A7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMotorcycleService.Domain", "MyMotorcycleService.Domain\MyMotorcycleService.Domain.csproj", "{FF46080B-F358-4D5C-92C8-03456C21ACB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMotorcycleService.API", "MyMotorcycleService.API\MyMotorcycleService.API.csproj", "{935D18BC-88B4-4FD2-AB8F-00D287D7B799}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{418CACB3-25B1-4936-AF2D-7401747C3790}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMessageContracts", "..\Shared\MyMessageContracts\MyMessageContracts.csproj", "{4953BA04-7EFE-4BFC-AC6B-00B39321D60E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A078981-37A6-403D-AA6A-C65D415FEF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A078981-37A6-403D-AA6A-C65D415FEF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A078981-37A6-403D-AA6A-C65D415FEF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A078981-37A6-403D-AA6A-C65D415FEF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C804BD0-E711-47AA-AE62-CF3D65C49A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C804BD0-E711-47AA-AE62-CF3D65C49A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C804BD0-E711-47AA-AE62-CF3D65C49A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C804BD0-E711-47AA-AE62-CF3D65C49A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF46080B-F358-4D5C-92C8-03456C21ACB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF46080B-F358-4D5C-92C8-03456C21ACB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF46080B-F358-4D5C-92C8-03456C21ACB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF46080B-F358-4D5C-92C8-03456C21ACB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935D18BC-88B4-4FD2-AB8F-00D287D7B799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935D18BC-88B4-4FD2-AB8F-00D287D7B799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935D18BC-88B4-4FD2-AB8F-00D287D7B799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935D18BC-88B4-4FD2-AB8F-00D287D7B799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418CACB3-25B1-4936-AF2D-7401747C3790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418CACB3-25B1-4936-AF2D-7401747C3790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418CACB3-25B1-4936-AF2D-7401747C3790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418CACB3-25B1-4936-AF2D-7401747C3790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4953BA04-7EFE-4BFC-AC6B-00B39321D60E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4953BA04-7EFE-4BFC-AC6B-00B39321D60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4953BA04-7EFE-4BFC-AC6B-00B39321D60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4953BA04-7EFE-4BFC-AC6B-00B39321D60E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2944C07-2FFE-412F-A928-C5D99BB87AB2}
+	EndGlobalSection
+EndGlobal

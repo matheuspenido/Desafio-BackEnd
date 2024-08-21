@@ -1,0 +1,6 @@
+@MyRentMotorService.API_HostAddress = http://localhost:5251
+
+GET {{MyRentMotorService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

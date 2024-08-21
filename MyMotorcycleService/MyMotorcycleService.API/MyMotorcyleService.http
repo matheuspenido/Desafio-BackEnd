@@ -1,0 +1,6 @@
+@MyMotorcyleService_HostAddress = http://localhost:5056
+
+GET {{MyMotorcyleService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

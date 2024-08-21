@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  myrentmotorservice.api:
+    image: ${DOCKER_REGISTRY-}myrentmotorserviceapi
+    build:
+      context: .
+      dockerfile: MyRentMotorService.API/Dockerfile
