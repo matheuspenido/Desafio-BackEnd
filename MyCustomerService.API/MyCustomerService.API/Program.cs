@@ -56,18 +56,30 @@ builder.Services.AddDbContext<AppDbContext>(options =>
   options.UseNpgsql(connectionString);
 });
 
-builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
-builder.Services.AddAWSService<IAmazonS3>();
 
-builder.Services.AddScoped<IFileRepository, S3AwsRepository>(provider =>
+var accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_ID");
+var secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_ACCESS_KEY");
+
+if (!string.IsNullOrEmpty(accessKey) && !string.IsNullOrEmpty(secretKey))
 {
-  var s3Client = provider.GetRequiredService<IAmazonS3>();
-  var bucketName = builder.Configuration["AWS:BucketName"];
 
-  ArgumentException.ThrowIfNullOrEmpty(bucketName);
+  builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
+  builder.Services.AddAWSService<IAmazonS3>();
 
-  return new S3AwsRepository(s3Client, bucketName);
-});
+  builder.Services.AddScoped<IFileRepository, S3AwsRepository>(provider =>
+  {
+    var s3Client = provider.GetRequiredService<IAmazonS3>();
+    var bucketName = builder.Configuration["AWS:BucketName"];
+
+    ArgumentException.ThrowIfNullOrEmpty(bucketName);
+
+    return new S3AwsRepository(s3Client, bucketName);
+  });
+}
+else
+{
+  builder.Services.AddScoped<IFileRepository, NoOPRepository>();
+}
 
 builder.Services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
 builder.Services.AddScoped<IEntityFrameworkRepository<Customer>, EntityFrameworkRepository<Customer>>();
