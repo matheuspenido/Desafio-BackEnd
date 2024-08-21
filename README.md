@@ -114,7 +114,7 @@ To run the application, follow these steps:
 3. **Build and Start the Containers**: Run the following command to build the images and start the containers without using the previous cache:
 
 ```bash
-docker-compose --no-cache build
+docker-compose build --no-cache
 ```
 4. After all containers are built and started, the services will be available on the configured ports. You can use tools like Postman, cURL, or directly access the Swagger UIs to interact with the services:
 
